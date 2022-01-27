@@ -1,12 +1,15 @@
 ---
-title: Test
-description: A test blog to see if this shit actually works
+title: Blast beach - Seaham
+description: When the weather is nice, Blast beach is a lovely place to visit.
 author: Will Cooper
-date: 2022-01-07T16:23:36.609Z
-image: /static/img/bielsa-mural.jpeg
-alt text: A graffiti like image of Marcelo Bielsa on the side of a building
+date: 2022-01-27T13:00:48.034Z
+image: /static/img/blast-beach-seaham.jpeg
+alt text: Blast beach at sunset
 tags:
   - Tags
   - created
+  - beach
+  - quiet
+  - outdoor
 ---
-Hello mother clucker, it's me a blog
+Blast Beach is a great place for a coastal adventure. There’s plenty of free parking at Nose’s Point to the south of Seaham. From here, a fully accessible path runs across the property. Please note, the path is steep and uneven in places.
