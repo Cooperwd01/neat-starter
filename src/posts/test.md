@@ -4,7 +4,7 @@ description: When the weather is nice, Blast beach is a lovely place to visit.
 author: Will Cooper
 date: 2022-01-27T13:00:48.034Z
 image: /static/img/blast-beach-seaham.jpeg
-alt text: Blast beach at sunset
+alt: Blast beach at sunset
 tags:
   - Tags
   - created
