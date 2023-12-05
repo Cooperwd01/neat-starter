@@ -17,12 +17,10 @@ layout: default
       <article class="article-body mt-4">{{ content | safe }}</article>
       <p><time>{{ date | readableDate }} by {{ author }}</time></p>
     </div>
-  </div>
-  <div>
-    <strong>Tags:</strong>
-    <ul>
+    <!-- Tags -->
+    <ul class="m-0 pl-0 mb-4 tag-list">
       {% for tag in tags %}
-        <li id="link-tag-{{ loop.index }}"><a href="{{ '/tags/' + tag | slug }}/">{{ tag }}</a></li>
+        <li id="link-tag-{{ loop.index }}" class="tag-item"><a class="tag-link" href="{{ '/tags/' + tag | slug }}/">{{ tag }}</a></li>
       {% endfor %}
     </ul>
   </div>
