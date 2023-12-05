@@ -3,10 +3,11 @@ title: Our Blog
 layout: default
 ---
 
-<div class="container max-w-3xl px-6">
-
-    <h1 class="font-bold text-5xl">{{title}}</h1>
-
-    {{ content | safe }}
-
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="font-bold">{{title}}</h1>
+      {{ content | safe }}
+    </div>
+  </div>
 </div>

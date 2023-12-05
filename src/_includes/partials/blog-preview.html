@@ -1,24 +1,23 @@
-<div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 px-4 lg:px-0">
+{% set postslist = collections.post %}
 
-  {% set postslist = collections.post %}
-
-  {% for post in postslist | reverse %}
-    <div class="relative my-8 max-w-xs rounded overflow-hidden shadow-lg">
+{% for post in postslist | reverse %}
+  <div class="col-6 col-md-4 col-lg-3 mt-4 pb-4">
+    <div class="card m-0 w-100">
       {% if post.data.image %}
-        <img src="{{ post.data.image }}" style="width: 100%;" alt="{{ post.data.alt }}" />
+        <img class="card-img-top" src="{{ post.data.image }}" alt="{{ post.data.alt }}" />
       {% endif %}
-      <div class="px-6 py-4">
-        <h2 class="font-bold text-3xl text-gray-900 mb-2">
-          <a class="stretched-link" href="{{ post.url | url }}">
+      
+      <div class="card-body">
+        <p class="card-text">
+          <a href="{{ post.url | url }}">
             {% if post.data.title %}
               {{ post.data.title }}
             {% else %}
               Untitled
             {% endif %}
           </a>
-        </h2>
+        </p>
       </div>
     </div>
-    <!-- https://tailwindcomponents.com/component/simple-card -->
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}
