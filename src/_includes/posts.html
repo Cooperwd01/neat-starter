@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="background-hero-image px-4 py-5 text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{image}})">
+<div class="background-hero-image px-4 py-5 text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{image}})">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -17,5 +17,13 @@ layout: default
       <article class="article-body mt-4">{{ content | safe }}</article>
       <p><time>{{ date | readableDate }} by {{ author }}</time></p>
     </div>
+  </div>
+  <div>
+    <strong>Tags:</strong>
+    <ul>
+      {% for tag in tags %}
+        <li id="link-tag-{{ loop.index }}"><a href="{{ '/tags/' + tag | slug }}/">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

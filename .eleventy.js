@@ -4,6 +4,23 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addCollection("tagList", function (collection) {
+    let tagSet = new Set();
+
+    // Iterate over all pages to collect unique tags
+    collection.getAll().forEach(function (item) {
+      if ("tags" in item.data) {
+        item.data.tags.forEach(function (tag) {
+          tagSet.add(tag);
+        });
+      }
+    });
+
+    // Return an array of unique tags
+    return [...tagSet];
+  });
+  
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
