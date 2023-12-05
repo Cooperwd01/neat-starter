@@ -1,5 +1,5 @@
 ---
-title: Blast beach - Seaham
+title: Blast Beach - Seaham
 description: When the weather is nice, Blast beach is a lovely place to visit.
 author: Will Cooper
 date: 2022-01-27T13:00:48.034Z
