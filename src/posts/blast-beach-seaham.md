@@ -6,8 +6,6 @@ date: 2022-01-27T13:00:48.034Z
 image: /static/img/blast-beach-seaham.jpeg
 alt: Blast beach at sunset
 tags:
-  - Tags
-  - created
   - beach
   - quiet
   - outdoor
