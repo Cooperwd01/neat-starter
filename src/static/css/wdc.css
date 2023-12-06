@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Temp Colours 
 
@@ -11,7 +11,7 @@ Reseda green: #648767;
 */
 
 :root { 
-  --main-font-family: 'Varela Round', sans-serif;
+  --main-font-family: 'Red Hat Display', sans-serif;
   --main-text-colour: #2A324B;
   --main-brand-dark-colour: #2A324B;
   --main-brand-pop-colour: #EA526F;
@@ -49,10 +49,16 @@ a:hover {
 /* HEADER CSS */
 header {
   background-color: transparent;
-  background: var(--main-brand-background-color);
+  background: var(--main-brand-dark-colour);
 }
 .brand-text, .nav-link {
-  color: var(--main-brand-dark-colour) !important;
+  color: var(--main-white-colour) !important;
+}
+.brand-text{
+  font-weight: 600;
+}
+.brand-text:focus  {
+  outline: 2px solid var(--main-white-colour);
 }
 .nav-link:focus-visible {
   outline: 0;
@@ -134,8 +140,8 @@ a.skip-link.sr-only.sr-only-focusable:focus-visible {
 /* Navbar */
 .nav-title {
   font-family: var(--main-font-family);
-  color: var(--main-brand-dark-colour);
-  font-size: 1.35em;
+  color: var(--main-white-colour);
+  font-size: 1em;
   border-bottom: 2px solid transparent;
   display:flex; 
   align-content: left; 
@@ -162,7 +168,7 @@ a.skip-link.sr-only.sr-only-focusable:focus-visible {
   transition: all 0.7s;
 } 
 .navbar-dark .navbar-toggler .icon-bar {
-  background: var(--main-brand-dark-colour);
+  background: var(--main-white-colour);
 } 
 .navbar-toggler .icon-bar:nth-of-type(1) {
   transform: rotate(45deg);
@@ -194,7 +200,7 @@ button.navbar-toggler {
   margin-top: 8px !important;
 }
 button.navbar-toggler:focus {
-  outline: 2px solid var(--main-brand-dark-colour) !important;
+  outline: 2px solid var(--main-white-colour) !important;
   border-radius: 0px;
   box-shadow: none;
 }
@@ -358,7 +364,7 @@ input[type=text], input[type=email], textarea{
   font-size: 22px;
   color: var(--main-text-colour);
   font-family: var(--main-font-family);
-  font-weight: 100;
+  font-weight: 500;
 }
 .ftr-nav-link {
   display:inline-block;
@@ -704,6 +710,27 @@ span.work-title {
 /* index cards */
 h2.card-title {
   font-size: 1.75em;
+}
+.card-wdc {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-wdc:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-img-top {
+  min-height:140px;
+}
+.card-body {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 100px;
+}
+.card-text > a {
+  font-size: 19px;
+  color: var(--main-brand-dark-colour);
 }
 /* blog posts */
 article.article-body {
