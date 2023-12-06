@@ -244,7 +244,7 @@ button.navbar-toggler.collapsed:focus {
     padding-left: 0px !important;
    }
   .nav-link:hover{
-    color: var(--main-brand-dark-colour);
+    color: var(--main-white-colour);
   }
 }
 /* end of Nav / end of header */
@@ -253,7 +253,7 @@ button.navbar-toggler.collapsed:focus {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: var(--main-brand-dark-colour);
+  color: var(--main-white-colour);
 }
 a.hover-underline-animation {
   padding: 5px !important;
@@ -266,7 +266,7 @@ a.hover-underline-animation {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--main-brand-dark-colour);
+  background-color: var(--main-white-colour);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
